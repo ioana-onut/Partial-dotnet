@@ -5,4 +5,8 @@ Fill it in yourself, in your own words. There is no required number: what counts
 
 | Which rule from ASSIGNMENT.md is violated (R1–R8) | Where the problem was in the starter (file, approximate line) | How you discovered it (test, reading, AI) | What you changed |
 |---|---|---|---|
-| _(fill in)_ | _(fill in)_ | _(fill in)_ | _(fill in)_ |
+| R7 (intervale care se ating)	 | Services/BookingService.cs, linia 28 | AI | Comparația de suprapunere trebuie să fie strictă (<, nu <=) |
+|R7 / R8 (anularea eliberează intervalul)	 | BookingService.cs, linia 26 + BookingRepository.ListForRoom, linia 31 | AI | La verificarea de suprapunere iau în calcul doar rezervările Active |
+| R8 (dublă anulare)   	 | BookingService.cs, liniile 56–60 (Cancel) | AI | verific starea |
+| R5 (fără start în trecut)	 | BookingService.Create | AI |  |
+| R6 (maxim 4 ore)	 | BookingService.Create | AI |  |
